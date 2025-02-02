@@ -5,6 +5,10 @@
     --animation: var(--smoothanimation);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--primary-color) !important;;
     transition: background-color 0.5s, color 0.5s;
@@ -41,6 +45,33 @@ section:target {
 
 #icon {
     cursor: pointer;
+}
+
+#progress {
+    background-color: var(--secondary-color);
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+}
+
+#progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: var(--primary-color);
 }
 
 @font-face {
@@ -237,6 +268,10 @@ gap: 50px;
 
 .scroll p {
     margin-top: 20px;
+}
+
+.bouttoncv a {
+    text-decoration: none;
 }
 
 .bouttoncv button {
@@ -441,6 +476,11 @@ transition: transform 1s;
     height: 40px !important;
 }
 
+.card5 .content img {
+    width: 40px  !important;
+    height: 40px !important;
+}
+
 #photoshop {
     margin-left: -82px;
     margin-bottom: 75px;
@@ -470,6 +510,21 @@ transition: transform 1s;
 #illustrator2 {
     margin-bottom: 75px;
     margin-left: -132px;
+}
+
+#html {
+    margin-left: -130px;
+    margin-bottom: 75px;
+}
+
+#css {
+    margin-bottom: 75px;
+    margin-left: -60px;
+}
+
+#js {
+    margin-bottom: 75px;
+    margin-left: -95px;
 }
 
 .cardd {
@@ -790,28 +845,3 @@ transition: transform 1s;
 }
 
 
-
-
- /*
-<div class="imgg">
-        
-<div class="slide-track">
-<div class="slide"><img src="images/adobephotoshop.png" alt="" width="40%">
-</div>
-<div class="slide"><img src="images/adobeillustrator.png" 
-    alt="" width="40%"></div>
-<div class="slide"><img src="images/adobepremierepro.png" 
-    alt="" width="40%"></div>
-<div class="slide">  <img src="images/aftereffect.png" alt="" width="40%">
-</div>
-<div class="slide"><img src="images/figma.png" alt="" width="40%">
-</div>
-<div class="slide"><img src="images/javascript.png" alt="" width="40%">
-</div>
-<div class="slide"><img src="images/html.png" alt="" width="40%">
-</div>
-<div class="slide"><img src="images/css.png" alt="" width="40%">
-</div>
-
-
-</div>   */

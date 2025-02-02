@@ -1,0 +1,284 @@
+/* Styles responsives */
+
+@media (max-width: 768px) {
+   
+    .container ul {
+        margin-left: 70px;
+        
+    }
+
+    .container a {
+        margin: 10px 80px;
+    }
+
+    .pres h1, .ptfl p {
+        font-size: 40px;
+        margin-left: 20px;
+    }
+
+    .phraseintro p {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .bouttoncv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bouttoncv button {
+        margin-left: 0;
+    }
+
+    .image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card, .card2, .card3, .card4, .card5 {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .imgg::before, .imgg::after {
+        width: 10%;
+    }
+}
+
+
+    @media (max-width: 1366px) {
+        nav {
+            flex-direction: column; 
+            align-items: flex-end; 
+            margin-top: 20px;
+        }
+    
+        .container ul {
+            margin-left: 0; 
+        }
+
+        .presproj {
+            text-align: center;
+        }
+
+        .proj {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 32px;
+            position: absolute;
+            left: 14%;
+        }
+
+        
+        
+    
+            .ptfl p {
+                font-size: 30px; 
+                margin-top: 5px;
+            }
+    
+            .phraseintro p {
+                font-size: 16px;
+                line-height: 30px;
+            }
+    
+        
+    
+            .navv {
+                flex-wrap: wrap;
+                justify-content: center; 
+            }
+    
+            .projects img {
+                height: auto; 
+                width: 100%; 
+            }
+    
+            .proj {
+                grid-template-columns: 1fr; 
+                grid-gap: 16px;
+            }
+    
+            .np2 p {
+                font-size: 18px; 
+            }
+    
+            .titreal p {
+                font-size: 40px; 
+            }
+    
+            .phraseintro2 p {
+                font-size: 14px;
+            }
+            .image {
+                width: 300px;
+               
+            }
+        
+            .pp {
+                
+                margin-top: -200px;
+                margin-right: 250px;
+            }
+    
+    }
+
+
+    
+    @media (max-width:600px) {
+
+        nav {
+            margin-right: -400px;
+        }
+
+        nav ul {
+            
+            position: absolute;
+            top: 50px;
+            left: 70%;
+            right: 0;
+            flex-direction: row;
+            align-items: center;
+            background: var(--secondary-color);
+            gap: 0;
+            overflow: hidden;
+        }
+    
+        nav ul li {
+            padding: 10px;
+    
+        }
+
+        .container a {
+            color: var(--primary-color);
+        }
+
+        .menu-icon{
+            display: block;
+            
+        }
+        #icon {
+            color: var(--primary-color);
+        }
+
+        .pres p {
+            margin-left: 60px;
+        }
+
+        hr {
+            width: 100% !important;
+        }
+
+        .pres h1 {
+            margin-left: 60px;
+        }
+
+        .scroll p {
+            margin-left: 250px;
+            
+        }
+
+        .bouttoncv {
+            position: absolute;
+            left: 15%;
+        }
+
+        .bouttoncv button {
+            margin-right: 90px;
+        }
+
+        .phraseintro p {
+            font-size: 12px;
+            width: 100%;
+        }
+
+        .image {
+            margin-right: -380px;
+            margin-top: -300px;
+            
+        }
+
+        .scroll {
+           margin-top: -101px;
+             
+        }
+
+        .np2  {
+           position: relative;
+           left: 50%;
+        }
+
+        .titreal p {
+            position: relative;
+            left: 50%;
+        }
+
+        .phraseintro2 p {
+            position: relative;
+            left: 50%;
+        }
+        
+        .pp {
+            position: relative;
+           
+            left: 28%;
+            
+        }
+
+        .cards {
+            display: block !important;
+            margin-top: 200px;
+        }
+        
+    }
+
+
+
+    
+    #menuList {
+        transition: all 0.5s;
+    }
+   
+    :root {
+        --primary-color: #fff;
+        --secondary-color: #120838;
+        --third-color: #3a1ea1;
+        --shadow-color: rgba(0, 0, 0, .2);
+        --main-color: #f48b5e;
+        --quart-color: 187, 107, 252;
+        --fifth-color: linear-gradient(to right, rgba(255,255,255,0) 0%,
+            rgba(255,255,255,0) 100%);
+        --sixth-color: linear-gradient(to right, rgba(255,255,255,0) 0%,
+        rgba(255,255,255,1) 100%);  
+    
+        --1m: 8px;
+        --2m: calc(2* var(--1m));
+        --3m: calc(3* var(--1m));
+        --4m: calc(4* var(--1m));
+        --5m: calc(5* var(--1m));
+        --6m: calc(6* var(--1m));
+        --7m: calc(7* var(--1m));
+    
+        --gray-500-rgb: 60, 60, 65;
+        --gray-500: rgb(var(--gray-500-rgb));
+        --gray-500-light: rgb(var(--gray-500-rgb), var(--light));
+        --gray-500-lighter: rgb(var(--gray-500-rgb), var(--lighter));
+    
+        --secondary-rgb: 187, 107, 252;
+        --secondary: rgb(var(--secondary-rgb));
+    
+    }    
+        
+    
+    .dark-theme {
+        --primary-color: #120838 !important;
+        --secondary-color: white !important;
+        --shadow-color: rgba(0, 0, 0, .2) !important;; 
+        --fifth-color: linear-gradient(to right, rgba(255,255,255,0) 100%,
+        rgba(255,255,255,1) 100%) !important;; 
+    }

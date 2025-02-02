@@ -1,5 +1,22 @@
 /* Styles responsives */
 
+/* Styles responsives */
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    .container, .accueil, .aboutsection {
+        display: none; /* Cache tout le contenu du site */
+    }
+}
+
+@media screen and (max-width: 1024px) and  (orientation: landscape) {
+    .landscape-warning {
+        opacity: 1;
+        font-size: 20px;
+        padding: 20px;
+    }
+}
+
+
 @media (max-width: 768px) {
    
     .container ul {

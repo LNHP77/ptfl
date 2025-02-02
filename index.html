@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" 
+rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100.
+.1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+    <div class="cursor">
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+        <div class="circle" style="background-color: orangered;"></div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <section class="accueil">
+    <header class="container">
+        <nav>
+            <ul class="navv" id="menuList">
+                
+                <li class>
+             <a href="#" id="page" class="nav-link">Accueil</a>
+                </li>
+                <li>
+              <a href="#presentation" id="page" class="nav-link">Présentation</a>
+              </li>
+              <li>
+            <a href="#realisations" id="page" class="nav-link">Réalisations</a>
+              </li>
+             <li>
+            <a href="#contact" id="page" class="nav-link">Contact</a>
+            
+            </li>
+            <li>
+                <img src="images/vecteezy_moon-icon-png_17059174.png" alt="" id="icon">
+            </li>
+                
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+
+        <script type="text/javascript">
+            var marker = document.querySelector('#marker')
+            var item = document.querySelectorAll('nav a')
+
+            function indicator(e){
+                marker.style.left = e.offsetLeft+"px"
+                marker.style.width = e.offsetLeft+"px"
+            }
+
+            item.forEach(link => {
+                link.addEventListener('click', (e)=>{
+                    indicator(e.target)
+                })
+            })
+
+         
+
+        </script>
+           <script>const coords = { x: 0, y: 0 };
+            const circles = document.querySelectorAll(".circle");
+        
+            const colors = ["orangered"];
+        
+            circles.forEach(function (circle, index) {
+              circle.x = 0;
+              circle.y = 0;
+              circle.style.backgroundColor = colors[index % colors.length];
+            });
+        
+            window.addEventListener("mousemove", function (e) {
+              coords.x = e.clientX;
+              coords.y = e.clientY;
+        
+            });
+        
+            function animateCircles() {
+        
+              let x = coords.x;
+              let y = coords.y;
+        
+              circles.forEach(function (circle, index) {
+                circle.style.left = x - 12 + "px";
+                circle.style.top = y - 12 + "px";
+        
+                circle.style.scale = (circles.length - index) / circles.length;
+        
+                circle.x = x;
+                circle.y = y;
+        
+                const nextCircle = circles[index + 1] || circles[0];
+                x += (nextCircle.x - x) * 0.3;
+                y += (nextCircle.y - y) * 0.3;
+              });
+        
+              requestAnimationFrame(animateCircles);
+            }
+        
+            animateCircles();
+          </script>
+</header>
+
+    <div class="pres">
+        <ul class="animate___animated
+            animate_fadeIn
+            animate_infinite">
+        <div class="np">
+        <p>PAVIUS LÉHANN</p>
+    </div>
+    
+    <div class="ptfl">
+    <h1><b>Découvrez mon <br>portofolio !</b></h1>
+    </div>
+    
+    <div class="phraseintro">
+        <p>Étudiant en 2ème année de BUT MMI à l'IUT de Guadeloupe, vous allez <br> découvrir par le 
+        biais de réalisations mon travail durant <br> cette première année.</p>
+    </div>
+    <div class="bouttoncv">
+        <button id="submitButton" download-class="download-btn">
+            <span id="coloring2">Télécharger mon CV</span> </button>
+            <div class="scroll"><p>Voir plus &darr; </p></div>
+            
+    </div>
+    <img src="images/pngegg.png" alt="" width="800" class="image">
+</ul>
+</div>
+
+<br>
+<br>
+</section>
+
+<section class="aboutsection" id="presentation">
+
+    
+    <div class="imgg">
+        
+        <div class="slide-track">
+        <div class="slide"><img src="images/adobephotoshop.png" alt="" width="40%">
+        </div>
+        <div class="slide"><img src="images/adobeillustrator.png" 
+            alt="" width="40%"></div>
+        <div class="slide"><img src="images/adobepremierepro.png" 
+            alt="" width="40%"></div>
+        <div class="slide">  <img src="images/aftereffect.png" alt="" width="40%">
+        </div>
+        <div class="slide"><img src="images/figma.png" alt="" width="40%">
+        </div>
+        <div class="slide"><img src="images/javascript.png" alt="" width="40%">
+        </div>
+        <div class="slide"><img src="images/html.png" alt="" width="40%">
+        </div>
+        <div class="slide"><img src="images/css.png" alt="" width="40%">
+        </div>
+       
+
+    </div>
+
+</div>
+<br>
+<br><hr><br>
+<div class="presproj">
+<div class="np2">
+    <p>MES PROJETS</p>
+</div>
+    <div class="titreal">
+        <p><b>Mes réalisations 2024/2025</b></p>
+    </div>
+    <div class="phraseintro2">
+    <p>Découvrez mes réalisations tout au long de mon parcours.</p>
+</div>
+<br><br>
+<br><br>
+
+<div class="pp">
+<div class="cards">
+
+    
+    <div class="card">
+         
+        <div class="content">
+            <h2>Affiche Gyokeres</h2>
+            <img src="images/adobephotoshop.png" alt="" width="100" id="photoshop"><br>
+            
+            
+                 <a href="images/aixam3.jpg" target="_blank"><b>Voir plus</b></a>
+                
+    </div>
+        <img src="images/gettyimages-2189287895-1024x1024.png" alt="">
+    
+    </div>
+
+    <div class="card2">
+         
+        <div class="content">
+            <h2>Affiche Diallo</h2>
+            <img src="images/adobephotoshop.png" alt="" width="100" id="photoshop2"><br>
+                 <a href="images/diallo.png" target="_blank"><b>Voir plus</b></a>
+        
+    </div>
+        <img src="images/dialloo.png" alt="">
+    </div>
+
+    <div class="card3">
+        <div class="content">
+            <h2>Caratune</h2>
+            <img src="images/adobephotoshop.png" alt="" width="100" id="photoshop3"><br>
+            <img src="images/adobeillustrator.png" alt="" width="100" id="illustrator">
+                 <a href="images/cara charte graphique.pdf" target="_blank"><b>Voir plus</b></a>
+        </div>
+        <img src="images/behance-6391931505d47.png" alt="">
+    </div>
+
+    <div class="card4">
+        <div class="content">
+            <h2>Maillot fictif</h2>
+            <img src="images/adobephotoshop.png" alt="" width="100" id="photoshop4"><br>
+            <img src="images/adobeillustrator.png" alt="" width="100" id="illustrator2">
+                 <a href="images/maillot-mockup.jpg" target="_blank"><b>Voir plus</b></a>
+        </div>
+        <img src="images/maillot-mockup.png" alt="">
+    </div>
+
+    <div class="card5">
+        <div class="colorcard2">
+        <div class="content">
+            <h2>Mymusic</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                 suspendisse ultrices gravida. Risus commodo 
+                 viverra maecenas accumsan lacus vel facilisis.</p>
+                 <a href="https://mymusic.lehannpavius.fr/" target="_blank"><b>Voir plus</b></a>
+        </div>
+        <img src="images/travis.png" alt="">
+    </div>
+    </div>
+
+  
+
+    
+    
+</div>
+
+</div>
+
+<script>
+    let menuList = document.getElementById("menuList")
+    menuList.style.maxHeight = "0px";
+
+    function toggleMenu() {
+        if(menuList.style.maxHeight == "0px")
+    {
+        menuList.style.maxHeight = "300px";
+    }
+    else {
+        menuList.style.maxHeight = "0px"
+    }
+   
+}
+ </script>
+
+    <style>
+        
+        .cards{
+            
+            left: 100px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+            align-content: center; /* Centre verticalement */
+            align-items: center; /* Centre verticalement */
+            min-height: 100vh;
+            
+           
+        }
+
+        .card {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 90px;
+  background: linear-gradient(135deg, #000000, #000111, #663300, #996633, #663333, #996633);
+  
+}
+
+.card2 {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 90px;
+  background-image: url(images/téléchargement.jpg);
+  background-size: cover; /* Remplit l'élément sans déformation */
+  background-size: contain; /* Fait tenir l’image entière dans l’élément */
+
+}
+
+.card3 {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 90px;
+  background-image: url(images/05-1460.avif);
+  background-size: cover; /* Remplit l'élément sans déformation */
+    
+
+}
+
+.card4 {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 90px;
+  background: linear-gradient(135deg, #000000, #000111, #663300, #cccc66, #ffff99, #cccc66);
+
+}
+
+.card5 {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 90px;
+  background-image: url(images/Simple\ Music\ Player.jpg);
+
+}
+
+.card img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 400px;
+    transition: 0.5s;
+}
+
+.card:hover img {
+    left: 80%;
+    height: 450px;
+}
+
+
+
+    </style>
+    </section>
+
+    <footer>
+        <!-- Footer à compléter -->
+    </footer>
+    <script src="https://kit.fontawesome.com/d246e7ed91.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

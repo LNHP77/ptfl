@@ -37,11 +37,19 @@ body {
     rgba(255,255,255,1) 100%) !important;; 
 }
 
+.landscape-warning {
+    opacity: 0;
+    font-size: 20px;
+    padding: 20px;
+}
+
+
 section:target {
     outline: none; /* Désactive les bordures ou lignes automatiques */
     border: none;
     margin-top: 0; /* Empêche tout décalage visuel */
 }
+
 
 #icon {
     cursor: pointer;

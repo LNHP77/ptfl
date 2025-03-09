@@ -81,9 +81,18 @@
     }
 
     .header_wrapper .menu-navbar-nav {
-        text-align: center;
-        background-color: transparent;
+        width: 35%;
+        float: right;
+        background-color: var(--primary-color);
         padding-bottom: 15px;
+    }
+
+    .navbar-toggler {
+        margin-left: auto; 
+    }
+
+    .header_wrapper .menu-navbar-nav a{
+        float: right;
     }
 
     .header_wrapper .nav-item .nav-link {

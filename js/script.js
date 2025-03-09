@@ -132,18 +132,6 @@ window.onload = calcScrollValue;
         }
     });
   });
-
-
-
-  
-
-
-
-
-
-
-
-
       
 
       let nav = document.querySelector(".navbar");
@@ -163,3 +151,5 @@ window.onload = calcScrollValue;
           navCollapse.classList.remove("show");
         })
       })
+
+      

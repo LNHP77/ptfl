@@ -98,7 +98,16 @@ window.onload = calcScrollValue;
       }
 
 
-     
+      const intros = document.querySelectorAll(".intro_wrapper");
+
+      document.addEventListener("scroll", function(){
+        intros.forEach(intro => {
+            if(isInView(intro)) {
+              intro.classList.add("intro_wrapper--visible")
+            }
+        });
+      });
+    
      
      
       const abouts = document.querySelectorAll(".about_wrapper");
@@ -152,4 +161,5 @@ window.onload = calcScrollValue;
         })
       })
 
+      
       

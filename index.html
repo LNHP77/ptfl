@@ -48,6 +48,23 @@
 
         <div></div>
         <div></div>
+
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        
+
        
       </div>
 
@@ -87,6 +104,7 @@
 
       <!-- Section Intro-->
       <section id="intro" class="intro_wrapper">
+        
         <div class="animate___animated 
         animate_fadeIn
         animate_infinite">
@@ -96,6 +114,10 @@
           <source src="images/introptfl (1).mp4" type="video/mp4">
           Votre navigateur ne supporte pas la vidéo HTML5.
         </video>
+
+        </div>
+     
+        <div id="tablet-content-placeholder"></div>
       
         <!-- Contenu -->
         
@@ -109,22 +131,50 @@
         </div>
       </div> 
       </section>
+
+      <script>
+        function isTablet() {
+        return window.innerWidth >= 768 && window.innerWidth <= 1024;
+      }
+    
+      function insertTabletContent() {
+        const container = document.getElementById("tablet-content-placeholder");
+    
+        if (isTablet() && !container.hasChildNodes()) {
+          container.innerHTML = `
+           
+          `;
+        } else if (!isTablet()) {
+          container.innerHTML = ''; // Supprime le contenu si ce n’est plus un écran tablette
+        }
+      }
+    
+      // Exécution initiale
+      insertTabletContent();
+    
+      // Mettre à jour en cas de redimensionnement
+      window.addEventListener('resize', insertTabletContent);
+        
+      </script>
   
       </body>
     
-      <br><hr><br>  
+      <br><hr>
 
 <!-- Section Accueil-->
       <section id="home" class="banner_wrapper">
         <div class="animate___animated
             animate_fadeIn
             animate_infinite">
+</div>
+
+         
         <div class="container">
           <div class="row">
             <div class="col-sm-12 text-center text-md-start">
               <h6>PAVIUS LÉHANN</h6>
               <h1>Découvrez mon <br><span>portofolio !</span></h1>
-              <p class="fs-5 text-white lh-base">Étudiant en 2ème année de BUT MMI à l'IUT de Guadeloupe, vous allez <br> découvrir par le 
+              <p class="fs-5 text-white lh-base">Étudiant en 2ème année de BUT MMI à l'IUT de la Guadeloupe, vous allez <br> découvrir par le 
                 biais de réalisations mon travail durant <br> cette année.</p>
               <div class="mt-4">
                 <a href="images/CV-PAVIUS.png" download="CV-PAVIUS" class="main-btn">Téléchargez mon CV</a>
@@ -132,11 +182,15 @@
               </div>
             </div>
           </div>
-        </div> 
+        </div>
+        
+      
       </div>
       <br>
        <br> 
+     
 
+<!-- 
        <div class="imgg">
         
         <div class="slide-track">
@@ -159,16 +213,21 @@
        
 
     </div>
+  </div>
 
+  -->
+  
       </section>
 
-    <br><hr><br>
+    <br><hr>
       
 <!-- Section À propos-->
       <section class="about_wrapper" id="about">
         <div class="animate___animated
         animate_fadeIn
         animate_infinite">
+
+        
         <div class="container">
           <div class="row justify-content-between align-items-center">
             <div class="col-lg-5 mb-4 mb-lg-0">
@@ -206,7 +265,7 @@
 
                         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" 
                         aria-valuemin="0" aria-valuemax="100">
-                          <div class="progress-bar" style="width: 80%"></div>
+                          <div class="progress-bar" style="width: 90%"></div>
                         </div>
                         
                     </div>
@@ -226,13 +285,13 @@
 
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" 
                     aria-valuemin="0" aria-valuemax="100">
-                      <div class="progress-bar" style="width: 75%"></div>
+                      <div class="progress-bar" style="width: 90%"></div>
                     </div>
                     
                 </div>
 
                 <div class="single-progress">
-                  <h6>ANGLAIS</h6>
+                  <h6>AFTER EFFECTS</h6>
 
                   <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" 
                   aria-valuemin="0" aria-valuemax="100">
@@ -240,6 +299,16 @@
                   </div>
                  
               </div>
+
+              <div class="single-progress">
+                <h6>ANGLAIS</h6>
+
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" 
+                aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 80%"></div>
+                </div>
+               
+            </div>
 
 
                     </div>
@@ -317,13 +386,19 @@
           <div>
             <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
               <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Tous</button>
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">TOUS</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Design graphique</button>
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">DESIGN GRAPHIQUE</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Autres</button>
+                <button class="nav-link" id="pills-com-tab" data-bs-toggle="pill" data-bs-target="#pills-com" type="button" role="tab" aria-controls="pills-com" aria-selected="false">COMMUNICATION</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-motion-tab" data-bs-toggle="pill" data-bs-target="#pills-motion" type="button" role="tab" aria-controls="pills-motion" aria-selected="false">MOTION DESIGN</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">AUTRES</button>
               </li>
               
             </ul>
@@ -337,7 +412,7 @@
                      
                       <img src="images/1.jpg" class="w-100 h-100" alt="crt">
                        <div class="hidden-text">
-                        <i class="fa-solid fa-music"></i>
+                        <i class="fa-solid fa-headphones"></i>
                         <h5 class="mb-1 mt-5 text-white">
                           CARATUNE
                         </h5>
@@ -348,13 +423,13 @@
                   </div>
 
                   <div class="col-lg-4 col-sm-6 mb-4">
-                    <a href="images/diallo.png" target="_blank">
+                    <a href="caroussel.html" target="_blank">
                     <div class="portofolio-img">
                       <img src="images/2.jpg" class="w-100 h-100" alt="foot">
                        <div class="hidden-text">
                         <i class="fa-solid fa-futbol"></i>
                         <h5 class="mb-1 mt-5 text-white">
-                          AMAD DIALLO
+                          MATCHDAY DESIGNS
                         </h5>
                         <p class="m-0 text-white"></p>
                        </div>
@@ -422,6 +497,51 @@
                   </a>
                   </div>
 
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="images/adob (1).mp4" target="_blank">
+                    <div class="portofolio-img">
+                      <img src="images/8.png" class="w-100 h-100" alt="adobe">
+                       <div class="hidden-text">
+                        <i class="fa-solid fa-computer"></i>
+                        <h5 class="mb-1 mt-5 text-white">
+                          ANIMATION ADOBE
+                        </h5>
+                        <p class="m-0 text-white"></p>
+                       </div>
+                    </div>
+                  </a>
+                  </div>
+
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="images/adob (1).mp4" target="_blank">
+                    <div class="portofolio-img">
+                      <img src="images/chanel.png" class="w-100 h-100" alt="adobe">
+                       <div class="hidden-text">
+                        <i class="fa-solid fa-computer"></i>
+                        <h5 class="mb-1 mt-5 text-white">
+                          PUB CHANEL
+                        </h5>
+                        <p class="m-0 text-white"></p>
+                       </div>
+                    </div>
+                  </a>
+                  </div>
+
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="images/adob (1).mp4" target="_blank">
+                    <div class="portofolio-img">
+                      <img src="images/punch.png" class="w-100 h-100" alt="adobe">
+                       <div class="hidden-text">
+                        <i class="fa-solid fa-hand-fist"></i>
+                        <h5 class="mb-1 mt-5 text-white">
+                          ANIMATION COUP DE POING
+                        </h5>
+                        <p class="m-0 text-white"></p>
+                       </div>
+                    </div>
+                  </a>
+                  </div>
+
                 </div>
               </div>
 
@@ -433,7 +553,7 @@
                     <div class="portofolio-img">
                       <img src="images/1.jpg" class="w-100 h-100" alt="caratune">
                        <div class="hidden-text">
-                        <i class="fa-solid fa-music"></i>
+                       <i class="fa-solid fa-headphones"></i>
                         <h5 class="mb-1 mt-5 text-white">
                           CARATUNE
                         </h5>
@@ -476,16 +596,56 @@
                 </div>
               </div>
 
+              <div class="tab-pane fade" id="pills-com" role="tabpanel" aria-labelledby="pills-com-tab" tabindex="0">
+                <div class="row">  
+                  <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="images/CoArt.pdf" target="_blank">
+                    <div class="portofolio-img">
+                      <img src="images/7.jpg" class="w-100 h-100" alt="co-art">
+                       <div class="hidden-text">
+                        <i class="fa-solid fa-shirt"></i>
+                        <h5 class="mb-1 mt-5 text-white">
+                          CoArt
+                        </h5>
+                        <p class="m-0 text-white"></p>
+                       </div>
+                    </div>
+                  </a>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="pills-motion" role="tabpanel" aria-labelledby="pills-motion-tab" tabindex="0">
+                <div class="row">  
+                       <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="images/adob (1).mp4" target="_blank">
+                    <div class="portofolio-img">
+                      <img src="images/8.png" class="w-100 h-100" alt="adobe">
+                       <div class="hidden-text">
+                       <i class="fa-solid fa-computer"></i>
+                        <h5 class="mb-1 mt-5 text-white">
+                          ANIMATION ADOBE
+                        </h5>
+                        <p class="m-0 text-white"></p>
+                       </div>
+                    </div>
+                  </a>
+                  </div>
+
+                </div>
+              </div>
+
               <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
                 <div class="row">
                   <div class="col-lg-4 col-sm-6 mb-4">
-                    <a href="images/diallo.png" target="_blank">
+                    <a href="caroussel.html" target="_blank">
                     <div class="portofolio-img">
                       <img src="images/2.jpg" class="w-100 h-100" alt="foot">
                        <div class="hidden-text">
                         <i class="fa-solid fa-futbol"></i>
                         <h5 class="mb-1 mt-5 text-white">
-                          AMAD DIALLO
+                          MATCHDAY DESIGNS
                         </h5>
                         <p class="m-0 text-white"></p>
                        </div>
@@ -507,24 +667,11 @@
                     </div>
                   </a>
                   </div>
-
-                  <div class="col-lg-4 col-sm-6 mb-4">
-                    <a href="images/CoArt.pdf" target="_blank">
-                    <div class="portofolio-img">
-                      <img src="images/7.jpg" class="w-100 h-100" alt="co-art">
-                       <div class="hidden-text">
-                        <i class="fa-solid fa-shirt"></i>
-                        <h5 class="mb-1 mt-5 text-white">
-                          CoArt
-                        </h5>
-                        <p class="m-0 text-white"></p>
-                       </div>
-                    </div>
-                  </a>
-                  </div>
-
+ 
                 </div>
               </div>
+
+             
               
             </div>
           </div>

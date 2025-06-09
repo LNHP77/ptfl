@@ -4,6 +4,8 @@
     font-display: swap;
     --smoothanimation: cubic-bezier(.215, .61, .355, 1);
     --animation: var(--smoothanimation);
+    cursor: none !important;
+    
     
 }
 
@@ -14,10 +16,12 @@ html,body {
     width: 100%;
     background: var(--bg-dark-blue);
     cursor: none;
+    
 }
 
 a {
     text-decoration: none !important;
+    
 }
 
 ::-webkit-scrollbar {
@@ -224,19 +228,19 @@ section {
 
 .box div:nth-child(12){
     top: 170%; 
-    left: 6%;
+    left: 26%;
     animation-duration: 9s;
 }
 
 .box div:nth-child(13){
     top: 200%; 
-    left: 60%;
+    left: 70%;
     animation-duration: 10s;
 }
 
 .box div:nth-child(14){
     top: 200%; 
-    left: 10%;
+    left: 30%;
     animation-duration: 6s;
 }
 
@@ -247,7 +251,7 @@ section {
 }
 
 .box div:nth-child(16){
-    top: 220%; 
+    top: 320%; 
     left: 42%;
     animation-duration: 10s;
 }
@@ -272,13 +276,13 @@ section {
 
 .box div:nth-child(20){
     top: 240%; 
-    left: 82%;
+    left: 42%;
     animation-duration: 10s;
 }
 
 .box div:nth-child(21){
     top: 210%; 
-    left: 82%;
+    left: 62%;
     animation-duration: 10s;
 }
 
@@ -288,7 +292,80 @@ section {
     animation-duration: 10s;
 }
 
+.box div:nth-child(23){
+    top: 500%; 
+    left: 10%;
+    animation-duration: 6s;
+}
 
+.box div:nth-child(24){
+    top: 340%; 
+    left: 42%;
+    animation-duration: 10s;
+}
+
+.box div:nth-child(25){
+    top: 380%; 
+    left: 62%;
+    animation-duration: 10s;
+}
+
+.box div:nth-child(26){
+    top: 490%; 
+    left: 82%;
+    animation-duration: 10s;
+}
+
+
+.box div:nth-child(27){
+    top: 400%; 
+    left: 5%;
+    animation-duration: 10s;
+}
+
+.box div:nth-child(28){
+    top: 490%; 
+    left: 82%;
+    animation-duration: 10s;
+}
+
+
+.box div:nth-child(29){
+    top: 420%; 
+    left: 96%;
+    animation-duration: 10s;
+}
+
+.box div:nth-child(30){
+    top: 520%; 
+    left: 98%;
+    animation-duration: 10s;
+}
+
+
+.box div:nth-child(31){
+    top: 580%; 
+    left: 22%;
+    animation-duration: 10s;
+}
+
+.box div:nth-child(32){
+    top: 590%; 
+    left: 97%;
+    animation-duration: 10s;
+}
+
+.box div:nth-child(33){
+    top: 530%; 
+    left: 22%;
+    animation-duration: 10s;
+}
+
+.box div:nth-child(34){
+    top: 515%; 
+    left: 57%;
+    animation-duration: 10s;
+}
 
 
 .navbar {
@@ -306,6 +383,10 @@ section {
         transform: scale(1.3) translateX(-90px) rotate(360deg);
         opacity: 0;
     }
+}
+
+.cursor {
+    
 }
 
 
@@ -360,7 +441,7 @@ section {
     display: grid;
     place-items: center;
     font-size: 35px;
-    color: var(--bg-white);
+   
 }
 
 
@@ -433,7 +514,7 @@ section {
 
 .video-bg {
     transform: scale(0.8); 
-    margin-top: -150px;
+    margin-top: -250px;
   }
   
      
@@ -469,10 +550,15 @@ section {
     background-size: cover;
     background-attachment: fixed;
     padding: 200px 0 100px 0;
+    background: rgba(0, 0, 0, 0.1); /* pour améliorer la lisibilité */
 }
 
 .banner_wrapper--visible {
     opacity: 1;
+}
+
+.video-bgg {
+    
 }
 
 /* Caroussel */
@@ -673,7 +759,7 @@ transition: transform 1s;
     right: 0;
     height: 0;
     z-index: 1;
-    background-color: rgba(255, 27, 27, 0.72);
+    background: rgba(0, 0, 0, 0.7); /* pour améliorer la lisibilité */
     border-radius: .625rem;
     display: flex;
     flex-direction: column;
@@ -723,11 +809,11 @@ transition: transform 1s;
 .contact_wrapper .form-control:focus, 
 .contact_wrapper textarea:focus {
     border-color: var(--primary-color);
-    color: var(--text-gray);
+    color: var(--bg-dark-blue);
 }
 
 .contact_wrapper .call_details {
-    color: var(--text-gray);
+    color: var(--bg-dark-blue);
 }
 
 .contact_wrapper .call_details a {
@@ -771,10 +857,6 @@ transition: transform 1s;
     box-shadow: 0 10px 15px 0 rgb(0 0 0 / 10%);
     transform: translateY(-3px);
 }
-
-
-
-
 
 
 

@@ -313,6 +313,9 @@
         padding: 300px 0 0px 0;
     }
     
+    .tablet-only {
+  display: none;
+}
 }
 
 @media (max-width: 1180px) {

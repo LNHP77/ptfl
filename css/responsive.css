@@ -330,7 +330,12 @@
     
     .tablet-only {
   display: none;
+  
 }
+
+    .box {
+        display: none;
+    }
 }
 
 @media (max-width: 1180px) {

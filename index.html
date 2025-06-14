@@ -12,14 +12,14 @@
     <link rel="icon" href="images/logo.jpeg" type="image/png">
 
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100.
 .1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-toggle="75">
-
+  
   <article class="wrapper">
     <!-- Section Box-->
     <div class="box">
@@ -85,16 +85,16 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav menu-navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Accueil</a>
+                    <a class="nav-link active" aria-current="page" href="#home" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">Accueil</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#about">À propos</a>
+                    <a class="nav-link" href="#about" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">À propos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#portofolio">Réalisations</a>
+                    <a class="nav-link" href="#portofolio" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Réalisations</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true" href="#contact">Contact</a>
+                    <a class="nav-link" aria-disabled="true" href="#contact" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">Contact </a>
                   </li>
                 </ul>
               </div>
@@ -105,17 +105,15 @@
       <!-- Section Intro-->
       <section id="intro" class="intro_wrapper">
         
-        <div class="animate___animated 
-        animate_fadeIn
-        animate_infinite">
+      
       <body class="homepage">
         <!-- Vidéo de fond -->
-        <video class="video-bg" autoplay muted loop playsinline>
+        <video class="video-bg" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500" autoplay muted loop playsinline> 
           <source src="images/introptfl.mp4" type="video/mp4">
           Votre navigateur ne supporte pas la vidéo HTML5.
         </video>
 
-        </div>
+        
      
         <div id="tablet-content-placeholder"></div>
       
@@ -124,8 +122,8 @@
         <div class="container-fluid content">
           <div class="row">
             <div class="col text-center">
-              <h1 class="display-4 fw-bold mt-3">LÉHANN <span>PAVIUS</span></h1>
-              <p class="lead">L’excellence au service de vos projets.</p>
+              <h1 class="display-4 fw-bold mt-3" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="800">LÉHANN <span>PAVIUS</span></h1>
+              <p class="lead" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="800">L’excellence au service de vos projets.</p>
             </div>
           </div>
         </div>
@@ -169,22 +167,35 @@
 </div>
 
          
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 text-center text-md-start">
-              <h6>PAVIUS LÉHANN</h6>
-              <h1>Découvrez mon <br><span>portofolio !</span></h1>
-              <p class="fs-5 text-white lh-base">Étudiant en 2ème année de BUT MMI à l'IUT de la Guadeloupe, vous allez <br> découvrir par le 
-                biais de réalisations mon travail durant <br> cette année.</p>
-              <div class="mt-4">
-                <a href="images/CV-PAVIUS.png" download="CV-PAVIUS" class="main-btn">Téléchargez mon CV</a>
-               
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      
+    <div class="container">
+  <div class="row align-items-center">
+    <!-- Colonne Texte -->
+    <div class="col-md-6 text-center text-md-start">
+      <h6 data-aos="fade-right" data-aos-duration="1200" data-aos-delay="600">PAVIUS LÉHANN</h6>
+      <h1 data-aos="fade-right" data-aos-duration="1200" data-aos-delay="600">Découvrez mon <br><span>portofolio !</span></h1>
+      <p class="fs-5 text-white lh-base" data-aos="flip-up" data-aos-duration="1200" data-aos-delay="700">
+        Étudiant en 2ème année de BUT MMI à l'IUT de la Guadeloupe, vous allez <br>
+        découvrir par le biais de réalisations mon travail durant <br> cette année.
+      </p>
+      <div class="mt-4">
+        <a href="images/CV-PAVIUS.png" download="CV-PAVIUS" class="main-btn" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="600">Téléchargez mon CV</a>
+      </div>
+    </div>
+
+    <!-- Colonne Spline -->
+    <div class="col-md-6">
+      <div class="bg-main" data-aos="zoom-in-up" data-aos-duration="2400" data-aos-delay="600">
+        <spline-viewer url="https://prod.spline.design/BoWg-dch2T9e59sl/scene.splinecode"  style="transform: scale(1.5);"></spline-viewer>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
       </div>
       <br>
        <br> 
@@ -230,10 +241,10 @@
         
         <div class="container">
           <div class="row justify-content-between align-items-center">
-            <div class="col-lg-5 mb-4 mb-lg-0">
+            <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="600">
               <img src="images/19197013.jpg" class="img-fluid rounded-3" alt="About-me">
             </div>
-              <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+              <div class="col-lg-7 ps-lg-5 text-center text-lg-start" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="600">
                 <div class="my-3 mb-lg-0">
                   <h6>QUELQUES INFOS</h6>
                   <h2>À propos de moi</h2>
@@ -375,14 +386,14 @@
       <section id="portofolio" class="portofolio_wrapper">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12 text-center mb-4">
+            <div class="col-sm-12 text-center mb-4" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="550">
               <h6>MES PROJETS</h6>
               <h2>Mes réalisations 2024/2025</h2>
               <p>Découvrez mes réalisations tout au long de cette année.</p>
              
             </div>
           </div>
-          <div class="d-block d-sm-none">
+          <div class="d-block d-sm-none" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="550">
   <div class="mobile-overlay">
     <p class="col-sm-12 text-center mb-4">PS: Cliquez sur chaque image pour voir les infos.</p>
   </div>
@@ -390,7 +401,7 @@
 
 
 <div class="tablet-only">
-  <div class="tablet-overlay">
+  <div class="tablet-overlay" data-aos="aoom-in" data-aos-duration="1200" data-aos-delay="550">
     <p class="col-sm-12 text-center mb-4">PS: Cliquez sur chaque image pour voir les infos.</p>
   </div>
 </div>
@@ -399,7 +410,7 @@
 
           
           <div>
-            <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">TOUS</button>
               </li>
@@ -421,7 +432,7 @@
 
               <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                 <div class="row">
-                  <div class="col-lg-4 col-sm-6 mb-4">
+                  <div class="col-lg-4 col-sm-6 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
                     <div class="portofolio-img">
                       <img src="images/1.jpg" class="w-100 h-100" alt="crt">
                        <div class="hidden-text">
@@ -439,7 +450,7 @@
                  
                   </div>
 
-                  <div class="col-lg-4 col-sm-6 mb-4">
+                  <div class="col-lg-4 col-sm-6 mb-4" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="400">
                     
                     <div class="portofolio-img">
                       <img src="images/2.png" class="w-100 h-100" alt="foot">
@@ -455,7 +466,7 @@
                  
                   </div>
 
-                  <div class="col-lg-4 col-sm-6 mb-4">
+                  <div class="col-lg-4 col-sm-6 mb-4" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
                    
                     <div class="portofolio-img">
                       <img src="images/4.jpg" class="w-100 h-100" alt="aixam">
@@ -471,7 +482,7 @@
                 
                   </div>
 
-                  <div class="col-lg-4 col-sm-6 mb-4">
+                  <div class="col-lg-4 col-sm-6 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
                    
                     <div class="portofolio-img">
                       <img src="images/6.jpg" class="w-100 h-100" alt="flappybird">
@@ -488,24 +499,24 @@
                   
                   </div>
 
-                  <div class="col-lg-4 col-sm-6 mb-4">
+                  <div class="col-lg-4 col-sm-6 mb-4" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="400">
                     
-                    <div class="portofolio-img">
-                      <img src="images/5.png" class="w-100 h-100" alt="octoberrose">
+                    <div class="portofolio-img" >
+                      <img src="images/9.png" class="w-100 h-100" alt="octoberrose">
                        <div class="hidden-text">
-                        <i class="fa-solid fa-ribbon"></i>
+                        <i class="fa-solid fa-briefcase"></i>
                         <h5 class="mb-1 mt-5 text-white">
-                         OCTOBER ROSE
+                         AFFICHE JOB DATING
                         </h5>
                         <p class="m-0 text-center">Une affiche pop-art pour célébrer l'évènement October Rose.</p><br>
-                         <a href="images/octoberrose.jpg"class="snd-btn" target="_blank">VOIR LE PROJET</a>
+                         <a href="images/asfo-job-dating.jpg"class="snd-btn" target="_blank">VOIR LE PROJET</a>
 
                        </div>
                     </div>
                  
                   </div>
 
-                  <div class="col-lg-4 col-sm-6 mb-4 h-100 d-flex">
+                  <div class="col-lg-4 col-sm-6 mb-4 h-100 d-flex" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
                   
                     <div class="portofolio-img">
                       <img src="images/7.jpg" class="w-100 h-100" alt="co-art">
@@ -522,7 +533,7 @@
                 
                   </div>
 
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
                     
                     <div class="portofolio-img">
                   
@@ -542,17 +553,17 @@
                   
                   </div>
 
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="400">
                     
-                    <div class="portofolio-img">
+                    <div class="portofolio-img" >
                       <img src="images/chanel.png" class="w-100 h-100" alt="adobe">
                        <div class="hidden-text">
                         <i class="fa-solid fa-clapperboard"></i>
                         <h5 class="mb-1 mt-5 text-white">
                           PUB CHANEL
                         </h5>
-                        <p class="m-0 text-center">Une reproduction d'une publicité <br> de la marque Chanel.</p><br>
-                          <a href="https://www.youtube.com/watch?v=epYByG9fVjc"class="snd-btn" target="_blank">VERSION ORIGINALE</a>
+                        <p class="m-0 text-center">Une reproduction d'un extrait d'une publicité <br> de la marque Chanel.</p><br>
+                          <a href="https://www.youtube.com/watch?v=epYByG9fVjc&t=2m35s" class="snd-btn" target="_blank">VERSION ORIGINALE</a>
                           <br>
 
                           <a href="images/chanel.mp4" class="snd-btn" target="_blank">REPRODUCTION</a>
@@ -562,7 +573,7 @@
                  
                   </div>
 
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
                    
                     <div class="portofolio-img">
                       <img src="images/punch.png" class="w-100 h-100" alt="adobe">
@@ -624,14 +635,14 @@
                  <div class="col-lg-4 col-sm-6 mb-4">
                     
                     <div class="portofolio-img">
-                      <img src="images/5.png" class="w-100 h-100" alt="octoberrose">
+                      <img src="images/9.png" class="w-100 h-100" alt="octoberrose">
                        <div class="hidden-text">
-                        <i class="fa-solid fa-ribbon"></i>
+                        <i class="fa-solid fa-briefcase"></i>
                         <h5 class="mb-1 mt-5 text-white">
-                         OCTOBER ROSE
+                         AFFICHE JOB DATING
                         </h5>
                         <p class="m-0 text-center">Une affiche pop-art pour célébrer l'évènement October Rose.</p><br>
-                         <a href="images/octoberrose.jpg"class="snd-btn" target="_blank">VOIR LE PROJET</a>
+                         <a href="images/asfo-job-dating.jpg"class="snd-btn" target="_blank">VOIR LE PROJET</a>
 
                        </div>
                     </div>
@@ -691,8 +702,9 @@
                         <h5 class="mb-1 mt-5 text-white">
                           PUB CHANEL
                         </h5>
-                        <p class="m-0 text-center">Une reproduction d'une publicité <br> de la marque Chanel.</p><br>
-                          <a href="https://www.youtube.com/watch?v=epYByG9fVjc"class="snd-btn" target="_blank">VERSION ORIGINALE</a>
+                        <p class="m-0 text-center">Une reproduction d'un extrait d'une publicité <br> de la marque Chanel.</p><br>
+                          <a href="https://www.youtube.com/watch?v=epYByG9fVjc&t=2m35s" class="snd-btn" target="_blank">VERSION ORIGINALE</a>
+
                           <br>
 
                           <a href="images/chanel.mp4" class="snd-btn" target="_blank">REPRODUCTION</a>
@@ -781,7 +793,7 @@
 <section id="contact" class="contact_wrapper">
   <div class="container">
       <div class="row justify-content-between align-items-center">
-          <div class="col-lg-6 order-2 order-lg-1 pe-lg-5 text-lg-start text-center">
+          <div class="col-lg-6 order-2 order-lg-1 pe-lg-5 text-lg-start text-center" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
               <h6>CONTACT</h6>
               <h2>Contactez-moi</h2>
               <p>N'hésitez pas à me laisser un message !</p>
@@ -805,7 +817,7 @@
                   <p id="form-message" style="display: none; color: green; margin-top: 10px;">Message envoyé avec succès !</p>
               </form>
           </div>
-          <div class="col-lg-6 order-1 mb-4 order-lg-1 mb-lg-0">
+          <div class="col-lg-6 order-1 mb-4 order-lg-1 mb-lg-0" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
               <img src="images/10693998.jpg" alt="Contact" class="img-fluid">
           </div>
       </div>
@@ -842,11 +854,11 @@ document.getElementById("contact-form").addEventListener("submit", async functio
           <div class="container">
             <div class="row align-items-center">
               <div class="col-lg-4 col-md-6 text-center text-md-start">
-                <div class="footer-logo mb-3 mb-md-0">
+                <div class="footer-logo mb-3 mb-md-0" data-aos="zoom-in-left" data-aos-duration="1500px" data-aos-delay="500">
                   <img src="images/logo.jpeg" alt="logo" class="img-fluid" width="70">
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="500">
                 <ul class="list-unstyled d-flex justify-content-center justify-content-md-end justify-content-lg-center
                 social-icon mb-3 mb-md-0">
                   <li>
@@ -861,7 +873,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
               </ul>
               </div>
 
-              <div class="col-lg-4 col-md-12">
+              <div class="col-lg-4 col-md-12" data-aos="zoom-in-right" data-aos-duration="1200" data-aos-delay="400">
                 <div class="copyright-text text-lg-start text-center mb-3 mb-lg-0">
                   <p class="mb-0">Copyright © 2025. All Rights Reserved</p>
                 </div>
@@ -928,10 +940,6 @@ document.getElementById("contact-form").addEventListener("submit", async functio
      
 
    <script src="js/script.js"></script>
-<script src="https://kit.fontawesome.com/d246e7ed91.js" crossorigin="anonymous"></script>
-</body>
-</html>
-
 <script src="https://kit.fontawesome.com/d246e7ed91.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@ const pool = new Pool({
 });
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static('public'));
+app.use(express.static(__dirname)); // Sert à la racine
 
 app.post('/contact', async (req, res) => {
   const { name, _replyto, message } = req.body;

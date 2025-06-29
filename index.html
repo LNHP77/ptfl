@@ -109,7 +109,7 @@
       <body class="homepage">
         <!-- Vidéo de fond -->
         <video class="video-bg" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500" autoplay muted loop playsinline> 
-          <source src="images/videos/introptfl.mp4" type="video/mp4">
+          <source src="/images/videos/introptfl.mp4" type="video/mp4">
           Votre navigateur ne supporte pas la vidéo HTML5.
         </video>
 
@@ -183,7 +183,14 @@
     </div>
 
     <!-- Colonne Spline -->
-    
+    <div class="col-md-6">
+      <div class="bg-main" data-aos="zoom-in-up" data-aos-duration="2400" data-aos-delay="600">
+        <spline-viewer url="https://prod.spline.design/BoWg-dch2T9e59sl/scene.splinecode" class="responsive-spline" style="transform: scale(1.3);"
+        style="width: 100%; height: 100vh; max-width: 100vw; overflow: hidden;">
+          
+        </spline-viewer>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -616,7 +623,7 @@
                           marque fictive
                           de casque.
                          </p><br>
-                         <a href="images/pdf/cara charte graphique.pdf"class="snd-btn" target="_blank">VOIR LE PROJET</a>
+                         <a href="images/pdf/charte graphique.pdf"class="snd-btn" target="_blank">VOIR LE PROJET</a>
                        </div>
                     </div>
                   </div>
@@ -731,7 +738,7 @@
                           ANIMATION COUP DE POING
                         </h5>
                         <p class="m-0 text-center">Une publicité fictive de Carglass, avec un homme mettant des coups à une vitre pour tester sa solidité.</p><br>
-                          <a href="images/videos/test2.mp4"class="snd-btn" target="_blank">VOIR LE PROJET</a>
+                          <a href="images/videos/adob.mp4"class="snd-btn" target="_blank">VOIR LE PROJET</a>
                        </div>
                     </div>
                   
@@ -829,18 +836,18 @@
               <div class="row call_details mb-4">
                   <label class="col-sm-3 col-lg-4 text-white">Contact par Email:</label>
                   <div class="col-sm-9 col-lg-8 mb-3 mb-lg-12 text-md-start">
-                      <a href="#">lehann.p@gmail.com</a>
+                      <a href="">lehann.p@gmail.com</a>
                   </div>
               </div>
-              <form id="contact-form" action="https://formspree.io/f/movjnnlq" method="POST">
+              <form id="contact-form" action="/contact" method="POST">
                   <div class="mb-4">
-                      <input type="text" name="name" class="form-control" placeholder="Votre nom" autocomplete="off" required>
+                      <input type="text" name="name" class="form-control" placeholder="Votre nom" required>
                   </div>
                   <div class="mb-4">
-                      <input type="email" name="_replyto" class="form-control" placeholder="Votre e-mail" autocomplete="off" required>
+                      <input type="email" name="_replyto" class="form-control" placeholder="Votre e-mail" required>
                   </div>
                   <div class="mb-4">
-                      <textarea name="message" cols="40" rows="4" class="form-control" placeholder="Votre message..." autocomplete="off" required></textarea>
+                      <textarea name="message" cols="40" rows="4" class="form-control" placeholder="Votre message..." required></textarea>
                   </div>
                   <button type="submit" class="main-btn">Envoyer</button>
                   <p id="form-message" style="display: none; color: green; margin-top: 10px;">Message envoyé avec succès !</p>
@@ -853,30 +860,6 @@
   </div>
 </section>
 
-<script>
-document.getElementById("contact-form").addEventListener("submit", async function(event) {
-  event.preventDefault(); // Empêche la redirection
-  const form = event.target;
-  const formData = new FormData(form);
-
-  try {
-      const response = await fetch(form.action, {
-          method: form.method,
-          body: formData,
-          headers: { 'Accept': 'application/json' }
-      });
-
-      if (response.ok) {
-          document.getElementById("form-message").style.display = "block"; // Affiche le message de confirmation
-          form.reset(); // Réinitialise le formulaire après envoi
-      } else {
-          alert("Erreur lors de l'envoi du message. Veuillez réessayer.");
-      }
-  } catch (error) {
-      alert("Une erreur s'est produite. Vérifiez votre connexion.");
-  }
-});
-</script>
 
 <!-- Section Footer-->
       <section id="contact" class="footer_wrapper mt-3 mt-md-0">
@@ -911,30 +894,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
           </div>
       </section>
 
-<script>
-  document.getElementById("contact-form").addEventListener("submit", async function(event) {
-      event.preventDefault(); // Empêche la redirection
-      const form = event.target;
-      const formData = new FormData(form);
-  
-      try {
-          const response = await fetch(form.action, {
-              method: form.method,
-              body: formData,
-              headers: { 'Accept': 'application/json' }
-          });
-  
-          if (response.ok) {
-              document.getElementById("form-message").style.display = "block"; // Affiche le message de confirmation
-              form.reset(); // Réinitialise le formulaire après envoi
-          } else {
-              alert("Erreur lors de l'envoi du message. Veuillez réessayer.");
-          }
-      } catch (error) {
-          alert("Une erreur s'est produite. Vérifiez votre connexion.");
-      }
-  });
-  </script>
+
 
 <!-- Section Curseur-->
     <div class="cursor">

@@ -4,12 +4,6 @@ require('dotenv').config();
 const { Pool } = require('pg');
 
 
-const pool = new Pool({
-  connectionString: 'postgresql://root:pMqVkNALNWiuQEyZHPcmQTneN81Cll9x@dpg-d1gr456mcj7s73d58lf0-a.oregon-postgres.render.com/portofolio_abes',
-  ssl: { rejectUnauthorized: false }
-});
-
-
 const app = express();
 const port = 3000;
 

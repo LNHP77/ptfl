@@ -1,15 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const { Pool } = require('pg');
 require('dotenv').config();
+const { Pool } = require('pg');
+
 
 const pool = new Pool({
-  host: process.env.PG_HOST,
-  port: process.env.PG_PORT,
-  user: process.env.PG_USER,
-  password: process.env.PG_PASSWORD,
-  database: process.env.PG_DATABASE,
-  ssl: { rejectUnauthorized: false } // IMPORTANT pour Render
+  connectionString: 'postgresql://root:pMqVkNALNWiuQEyZHPcmQTneN81Cll9x@dpg-d1gr456mcj7s73d58lf0-a.oregon-postgres.render.com/portofolio_abes',
+  ssl: { rejectUnauthorized: false }
 });
 
 

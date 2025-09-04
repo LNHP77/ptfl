@@ -396,6 +396,8 @@ section {
     position: fixed;
     top: 0;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3 ease;
   }
 
 @keyframes animate {
@@ -437,6 +439,7 @@ section {
     
     
 }
+
 
 #progress {
     
@@ -602,6 +605,13 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+     margin-left: 460px;
+}
+
+@media (max-width: 1300px) {
+    .bg-main-container {
+       
+    }
 }
 
 .responsive-spline {
@@ -610,8 +620,11 @@ section {
   max-height: 500px; /* Limite pour éviter les très grands écrans */
   min-height: 300px;
   display: block;
-  margin-left: 70px;
+  
+ 
 }
+
+
 
 
 
@@ -850,6 +863,7 @@ section {
     box-shadow: 0 10px 15px 0 rgb(0 0 0 / 10%);
     transform: translateY(-3px);
 }
+
 
 
 

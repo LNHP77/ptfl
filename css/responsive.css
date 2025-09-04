@@ -13,6 +13,13 @@
 
 
 @media (max-width: 768px) {
+    body {
+        cursor: none;
+    }
+     .circle {
+        visibility: hidden;
+    }
+
     .box div {
         position: absolute;
         width: 30px; 
@@ -76,6 +83,13 @@
 }
 
 @media (max-width: 991px) {
+      body {
+        cursor: none;
+    }
+     .circle {
+        visibility: hidden;
+    }
+
     section {
         padding: 30px 0;
     }
@@ -132,14 +146,27 @@
         height: 0px;
     }
 
-    
+     .bg-main {
+     margin-left: 260px;
+}
 }
 
 @media (max-width: 1366px) {
+      body {
+        cursor: none;
+    }
+
+    .circle {
+        visibility: hidden;
+    }
 
     .tablet-only {
     display: block;
   }
+
+  .bg-main {
+     margin-left: 260px;
+}
   
     .box div:nth-child(12){
         height: 0;
@@ -300,7 +327,13 @@
 }
 
 @media (max-width: 490px) {
+      body {
+        cursor: none;
+    }
 
+     .circle {
+        display: none;
+    }
       .bg-main {
         display: none;
       }  
@@ -334,20 +367,43 @@
         display: none;
     }
 
+    #pills-tabContent {
+    width: 50% !important;
     
+    
+}
 }
 
 @media (max-width: 1180px) {
-   
+     body {
+        cursor: none;
+    }
+     .circle {
+        visibility: hidden;
+    }
 
     .banner_wrapper {
         padding: 100px 0 30px 0 !important;
     }
 
-    
+     .bg-main {
+     margin-left: 180px;
+}
 }
 
 @media (max-width : 1024px) {
+
+      body {
+        cursor: none;
+    }
+     .circle {
+        visibility: hidden;
+    }
+
+      .bg-main {
+     margin-left: 230px;
+}
+
     .box div:nth-child(23){
         top: 200%; 
         left: 10%;
@@ -464,6 +520,10 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+      body {
+        cursor: none;
+    }
+    
   .tablet-only {
     display: block;
   }

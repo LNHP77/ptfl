@@ -367,11 +367,7 @@
         display: none;
     }
 
-    #pills-tabContent {
-    width: 50% !important;
-    
-    
-}
+ 
 }
 
 @media (max-width: 1180px) {
@@ -528,3 +524,4 @@
     display: block;
   }
 }
+
